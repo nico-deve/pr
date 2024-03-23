@@ -28,31 +28,10 @@
     font-size: 18px;
     color: rgb(180, 231, 214);
 }
-
-.puffer {
-    position: absolute;
-    margin-top: 600px;
-    transform: translateY(-50%);
-    margin-left: 50%;
-    transform: translateX(-50%);
-    width: 50%;
-    height: 200px;
+@media screen and (max-width: 600px) {
+    .explain {
+        width: 80%;
+    }
     
 }
-@media (max-width: 1400px) {
-    .puffer {
-        margin-top: 1000px;
-    }
-}
-@media (max-width: 1000px) {
-    .puffer {
-        margin-top: 1500px;
-    }
-}
-@media (max-width: 600px) {
-    .puffer {
-        margin-top: 2000px;
-    }
-}
-
 

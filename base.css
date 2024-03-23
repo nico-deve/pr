@@ -157,4 +157,17 @@ footer .wave#wave4 {
     border-radius: 15px;
     text-align: center;
 }
+@media screen and (max-width: 900px) {
+    .Datenschutz 
+    {
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .Datenschutz
+    {
+        width: 90%;
+    }
+}
 
