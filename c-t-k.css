@@ -1,0 +1,119 @@
+
+/* centrale text für kontakt (c-t-k.css). Ähnlich wie c-t.css, nur mit leichten Abänderungen.*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.wrapper {
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: var(--clr-green);
+    padding: 2rem;
+}
+
+.wrapper .content {
+    font-size: 25px;
+    font: light 2rem "poppins", sans-serif;
+}
+.wrapper .content ol {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 8px;
+    list-style: none;
+    --height: 2.5rem;
+    height: var(--height);
+    line-height: var(--height);
+    width: fit-content;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.wrapper .content ol li {
+    display: inline-block;
+
+    animation: slide calc(4*3*2s) steps(3) infinite;   
+}
+@keyframes slide {
+    100% {
+            transform: translateY(-300%);
+    }
+    
+}
+    
+.wrapper .content ol li span {
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(20deg,white, var(--clr-yellow), white);
+       background-clip: text;
+    
+
+
+    white-space: nowrap;
+
+    border-right: .4rem solid #9ceb41;   /* zusätzlich um die Animation abzuändern */
+    
+    
+    display: inline-block;                          /* zusätzlich */
+
+    width: 0%;                                      /* zusätzlich */
+
+    animation: cursor .6s step-end infinite,
+              typing 4s steps(20) infinite alternate;                      /* zusätzlich */
+}
+
+@keyframes cursor {                                 /* zusätzlich */
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {  
+    0%,10%  {
+        width: 0%;
+    }
+    70%,100%  {
+        width: 101%;
+    }
+}
+
+
+
+
+@media (max-width: 800px) {
+    
+    
+    .wrapper .content {
+        font-size: 22px;
+        font: light 2rem "poppins", sans-serif;
+    }
+
+}
+@media (max-width: 600px) {
+    .wrapper {
+        display: flex;
+    }
+    .wrapper .content { 
+        font-size: 21px;
+        font: light 1.8rem "poppins", sans-serif;
+        
+    }
+    .wrapper .content ol {
+        --height: 2rem;
+    }
+}
+@media (max-width: 500px) {
+    .wrapper .content {
+        
+        font: light 1.6rem "poppins", sans-serif;
+    }
+    
+    .wrapper .content ol li span {
+        border-right: .2rem solid #9ceb41;
+        
+    }
+
+}
