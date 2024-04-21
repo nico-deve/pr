@@ -1,0 +1,23 @@
+.stand {
+    position: absolute;
+    display: flex;
+    writing-mode: vertical-rl;
+    margin-left: 96%;
+    white-space: nowrap; /* verhindert Umbrüche */
+    margin-top: 100px;
+    color: var(--clr-green);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width: 600px) {
+    .stand {
+        margin-left: 95%;
+        margin-top: 240px;
+    } 
+}
+@media screen and (max-width: 500px) {
+    .stand {
+        margin-left: 90%;
+    }
+    
+}
