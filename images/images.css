@@ -183,7 +183,7 @@ body { overflow-x: hidden; font-family: Georgia; -webkit-font-smoothing: antiali
   
   .slider-wrapper {
           overflow-y: auto;
-          max-height: 65vh;
+          max-height: 60vh;
   }
   .slide-image {
           width: 36vw;
