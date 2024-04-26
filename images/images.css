@@ -12,7 +12,7 @@ body { overflow-x: hidden; font-family: Georgia; -webkit-font-smoothing: antiali
 }
 
 .slider-wrapper {
-  margin-top: 5vw;
+  margin-top: 4vw;
   margin-left: 5vw;
 }
 
@@ -85,7 +85,7 @@ body { overflow-x: hidden; font-family: Georgia; -webkit-font-smoothing: antiali
 }
 .arrow:hover {
   border-color: #0A8ACB;
-  border-width: 0.85vw;
+  border-width: 0.55vw;
 }
 .arrow:before {
   display: block;
@@ -103,11 +103,6 @@ body { overflow-x: hidden; font-family: Georgia; -webkit-font-smoothing: antiali
 .arrow.next {
   transform: rotate(135deg);
   right: 0;
-}
-
-@media screen and (min-width: 1600px) {
-            
-  .slider-wrapper {margin-top: 46px;}
 }
 
 
