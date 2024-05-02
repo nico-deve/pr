@@ -9,6 +9,17 @@
   list-style: none;
   margin-left: 13px;
 }
+.button-container ul a.active {
+  font-size: 1.1rem;
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  background: var(--clr-yellow);
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  padding: 0.2em 1em;
+  border-radius: 0.25em
+}
 
 /* für Neon eingefügt */
 :root {
@@ -141,6 +152,10 @@
     border-radius: 15px;
     box-shadow: 0 0 2em 0.5em var(--clr-neon);
     color: var(--clr-bg); 
+  }
+  .button-container ul a .active
+  {
+      border-radius: 0.25em;
   }
   .button-container ul a:hover
   {
