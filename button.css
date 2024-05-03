@@ -149,13 +149,14 @@
   {
     margin: 10px;
     background-color: var(--clr-neon);
-    border-radius: 15px;
+    
     box-shadow: 0 0 2em 0.5em var(--clr-neon);
     color: var(--clr-bg); 
   }
   .button-container ul a .active
   {
-      border-radius: 0.25em;
+      font-size: 1rem;
+      border-radius: 0.35em;
   }
   .button-container ul a:hover
   {

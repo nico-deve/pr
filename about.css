@@ -22,8 +22,7 @@
 .about h2     {
     font-size: 17px;
     text-align: justify;
-    color: rgb(180, 231, 214);
-    
+    color: rgb(180, 231, 214); 
 }
 .image {
     position: relative;
@@ -49,6 +48,14 @@
         transform: translateX(-50%);
         margin-bottom: 8px;  
     } 
+    .about h2     {
+        text-align: center;
+        word-spacing: large; 
+    }
+    .about h3     {
+        text-align: center;
+        word-spacing: large; 
+    }
 }
 @media screen and (max-width: 600px) {
     .image {
