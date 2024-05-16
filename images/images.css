@@ -25,6 +25,7 @@ body { overflow-x: hidden; font-family: Georgia; -webkit-font-smoothing: antiali
   height: 30vw;
   max-height: 540px;
   max-width: 300px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0008);   /* Spiegeleffekt */
 }
 .slide-image img {
   width: 18vw;
@@ -32,6 +33,7 @@ body { overflow-x: hidden; font-family: Georgia; -webkit-font-smoothing: antiali
   max-height: 620px;
   max-width: 300px;
   border-radius: 10px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0008);   /* Spiegeleffekt */
 }
 
 .slide-content {
