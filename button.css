@@ -1,0 +1,172 @@
+
+.button-container ul {
+  display: flex;
+  justify-content: right;
+  margin-right: 5%; 
+  margin-top: -45px;
+}
+.button-container ul a {
+  list-style: none;
+  margin-left: 13px;
+}
+.button-container ul a.active {
+  font-size: 1.1rem;
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  background: var(--clr-yellow);
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  padding: 0.2em 1em;
+  border-radius: 0.25em
+}
+
+/* für Neon eingefügt */
+:root {
+    --clr-neon: hsla(17, 100%, 54%, 0.986);
+    --clr-green: hsla(76, 75%, 57%, 0.973);
+    --clr-yellow: hsla(61, 87%, 59%, 0.986);
+    --clr-bg: hsla(0, 0%, 0%, 0.986);
+  }
+ 
+  .neon-button {
+    font-size: 1rem;
+  
+    display: inline-flex;
+
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-green);
+    border: var(--clr-neon) 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+  
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  
+    position: relative;
+  }
+  
+  .neon-button::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--clr-neon);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1em);
+    opacity: 0.7;
+  }
+  
+  .neon-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    background-color: var(--clr-neon);
+    z-index: -1;
+    transition: opacity 100ms linear;
+  }
+  
+  .neon-button:hover,
+  .neon-button:focus {
+    color: var(--clr-bg);
+    text-shadow: none;
+  }
+  
+  .neon-button:hover::before,
+  .neon-button:focus::before {
+    opacity: 1;
+  }
+  .neon-button:hover::after,
+  .neon-button:focus::after {
+    opacity: 1;
+  }
+/* für Neon eingefügt */ 
+
+.toggle-button
+{
+    margin-right: 3%;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+.toggle-button .bar
+{
+    height: 4px;
+    width: 100%;
+    background-color: var(--clr-neon);
+    border-radius: 100px;
+}
+
+@media(max-width: 800px)
+{
+  .button-container 
+  {
+      display: none;
+      position: absolute;
+      margin-top: 110px;
+      margin-left: 50%;
+      transform: translateX(-50%);  /* um genau die Mitte des Objekts zu positionieren
+      sonst wird es vom Rand aus zentriert und nicht 100% zentriert */
+      flex-direction: column;
+      width: 140px;
+      
+      
+  }
+  .toggle-button
+  {
+      display: flex;
+  }
+  
+  .button-container ul
+  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      border: solid 2px var(--clr-bg);
+      background: url(pp.jpg);
+      border-radius: 15px;
+      box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  }
+  .button-container ul a 
+  {
+    margin: 10px;
+    background-color: var(--clr-neon);
+    
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    color: var(--clr-bg); 
+  }
+  .button-container ul a .active
+  {
+      font-size: 1rem;
+      border-radius: 0.35em;
+  }
+  .button-container ul a:hover
+  {
+      background-color: var(--clr-yellow);
+      color: var(--clr-bg);
+  }
+  
+  .button-container.active
+  {
+      display: flex;
+      
+  }
+}
